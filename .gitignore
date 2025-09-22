@@ -1,0 +1,72 @@
+# Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+nodemon-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage / reports
+coverage/
+.nyc_output/
+*.lcov
+
+# Build outputs
+build/
+dist/
+out/
+
+# Caches
+.cache/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+
+# TypeScript (si se añade más adelante)
+*.tsbuildinfo
+
+# Environment variables (mantén solo los ejemplos)
+.env
+.env.*
+!.env.example
+!.env.*.example
+.env.local
+.env.*.local
+
+# IDEs y editores
+.idea/
+*.iml
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Herramientas
+.qodana/
+qodana.sarif.json
+qodana.log
+
+# Node REPL / npm cache
+.node_repl_history
+.npm/
+
+# Diversos temporales
+.tmp/
+tmp/
+.temp/
+
