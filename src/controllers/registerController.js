@@ -16,7 +16,7 @@ exports.registerUser = async (req, res) => {
             return res.status(400).json({ message: 'All fields are required' });
         }
         // Create a new user
-        user = new User({ email, password, name , });
+        user = new User({ email, password, name });
 
         // Hash password
         const salt = await bcrypt.genSalt(10);
