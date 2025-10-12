@@ -108,5 +108,3 @@ exports.loginUser = async (req, res) => {
         });
     }
 };
-
-module.exports = exports;
