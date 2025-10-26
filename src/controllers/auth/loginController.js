@@ -39,7 +39,7 @@ exports.loginUser = async (req, res) => {
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
             // Increment login attempts
-            user.loginAttempts += 1;
+            user.loginAttempts = (user.loginAttempts || 0) + 1;
             
             // Check if the account should be blocked
             if (user.loginAttempts >= MAX_LOGIN_ATTEMPTS) {
@@ -108,5 +108,3 @@ exports.loginUser = async (req, res) => {
         });
     }
 };
-
-module.exports = exports;
